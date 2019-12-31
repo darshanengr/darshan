@@ -1,21 +1,19 @@
 ## Problem Statement: Find the average of an array using for and for-each loop##
 
-**Given an positive integer array find the average of the numbers in that using for-each loop.
+**Given a positive integers array find the average of the numbers in that array using for-each loop**
 
-**This exercise contains a class named LongestSpan with the following static method:**
+**This exercise contains a class named NumberAverage with the following methods:**
 
-     findAverage(int[]):String  
-  
-     - Method should take positive integer array as input and return a String with the average calculated.
-     - The average of the array have to calculated by using a for-each loop 
-     - All value in array should be positive if not send error message
-     - If array is empty send error message
-     
-     getArrayValues():void
-     
-     - Get the values of the array from the user using for loop.
-     - The input values are of int Datatype.  
-     - Pass the array to method findAverage and print the result fromm the method.
+     +findAverage(int[]) : String  
+         - Should take positive integer array as input and return a String with the average calculated
+         - The average of the array should be calculated by using a for-each loop 
+         - Should send error message if all value in array are not positive
+         - Should send error message if array is empty
+------------------------------------------------------
+     +getArrayValues() : void
+         - Should get the values of the array from the user using for loop
+         - Should get input values are of int datatype  
+         - Should pass the array to method findAverage and print the result from the method
 
 
 ## Example
