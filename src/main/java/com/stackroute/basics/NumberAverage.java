@@ -8,10 +8,11 @@ public class NumberAverage {
 
     //get the values of the array from the user
     public void getArrayValues() {
+
     }
 
     //write here logic to calculate the average an array
     public String findAverage(int[] inputArray) {
-        return null;
+        return  null;
     }
 }
