@@ -2,11 +2,11 @@ package com.stackroute.basics;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.stackroute.basics.NumberAverage;
 import org.junit.jupiter.api.*;
 
 public class NumberAverageTests {
     private NumberAverage numberAverage;
+    private String message = "Check the logic and foreach loop of method findAverage";
 
     @BeforeEach
     public void setup() {
@@ -21,13 +21,13 @@ public class NumberAverageTests {
     @Test
     public void givenRandomIntegerArrayThenReturnAStringResult() {
         int[] inputArray = {12, 2, 10};
-        assertEquals("The average value is: 8", numberAverage.findAverage(inputArray), "Check the logic and foreach loop of method findAverage");
+        assertEquals("The average value is: 8", numberAverage.findAverage(inputArray),message);
     }
 
     @Test
     public void givenConsecutiveIntegerArrayThenReturnAStringResult() {
         int[] inputArray = {12, 13, 14, 15, 16};
-        assertEquals("The average value is: 14", numberAverage.findAverage(inputArray), "Check the logic and foreach loop of method findAverage");
+        assertEquals("The average value is: 14", numberAverage.findAverage(inputArray), message);
     }
 
     @Test

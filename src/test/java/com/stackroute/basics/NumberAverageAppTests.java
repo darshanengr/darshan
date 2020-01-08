@@ -1,6 +1,5 @@
 package com.stackroute.basics;
 
-import com.stackroute.basics.NumberAverage;
 import org.junit.jupiter.api.*;
 
 import java.io.ByteArrayInputStream;
@@ -12,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class NumberAverageAppTests {
     private ByteArrayOutputStream outStream;
     private NumberAverage numberAverage;
+    private String message = "Check the logic in method findAverage";
 
     @BeforeEach
     public void setup() {
@@ -30,14 +30,14 @@ public class NumberAverageAppTests {
     public void givenRandomIntegerArrayThenReturnAStringResult() {
         System.setIn(new ByteArrayInputStream("5 \n 2 4 9 12 5".getBytes()));
         numberAverage.getArrayValues();
-        assertEquals("The average value is: 6", outStream.toString().trim().replaceAll(".*\n", ""), "Check the logic in method findAverage");
+        assertEquals("The average value is: 6", outStream.toString().trim().replaceAll(".*\n", ""), message);
     }
 
     @Test
     public void givenConsecutiveIntegerArrayThenReturnAStringResult() {
         System.setIn(new ByteArrayInputStream("6 \n 1 2 3 4 5 6".getBytes()));
         numberAverage.getArrayValues();
-        assertEquals("The average value is: 3", outStream.toString().trim().replaceAll(".*\n", ""), "Check the logic in method findAverage");
+        assertEquals("The average value is: 3", outStream.toString().trim().replaceAll(".*\n", ""), message);
     }
 
     @Test
