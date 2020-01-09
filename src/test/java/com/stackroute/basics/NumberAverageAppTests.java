@@ -14,7 +14,7 @@ public class NumberAverageAppTests {
     private String message = "Check the logic in method findAverage";
 
     @BeforeEach
-    public void setup() {
+    public void setUp() {
         outStream = new ByteArrayOutputStream();
         numberAverage = new NumberAverage();
         System.setOut(new PrintStream(outStream));

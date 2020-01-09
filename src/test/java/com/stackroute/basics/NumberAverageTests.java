@@ -9,7 +9,7 @@ public class NumberAverageTests {
     private String message = "Check the logic and foreach loop of method findAverage";
 
     @BeforeEach
-    public void setup() {
+    public void setUp() {
         numberAverage = new NumberAverage();
     }
 

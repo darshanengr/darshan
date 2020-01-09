@@ -1,4 +1,4 @@
-## Problem Statement: Find the average of an array using for and for-each loop##
+## Problem Statement: Find the average of an array using for and for-each loop
 
 **Given a positive integers array find the average of the numbers in that array using for-each loop**
 
@@ -12,7 +12,7 @@
 ------------------------------------------------------
      +getArrayValues() : void
          - Should get the values of the array from the user using for loop
-         - Should get input values are of int datatype  
+         - Should get input values of int datatype  
          - Should pass the array to method findAverage and print the result from the method
 
 
